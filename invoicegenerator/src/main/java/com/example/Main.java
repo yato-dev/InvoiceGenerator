@@ -9,9 +9,9 @@ public class Main {
 
         rideService.addRides("User1",
                 Arrays.asList(
-                        new Ride(2.5, 10),
-                        new Ride(3, 5),
-                        new Ride(0.1, 1)));
+                        new Ride(2.5, 10, RiderType.NORMAL),
+                        new Ride(3, 5, RiderType.PREMIUM),
+                        new Ride(0.1, 1, RiderType.NORMAL)));
 
         Invoice invoiceUser1 = invoiceService.getUserInvoice("User1");
         System.out.println(invoiceUser1);
